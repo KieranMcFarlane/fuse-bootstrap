@@ -136,11 +136,11 @@
 
     <div class="container mb-4 mt-4">
       <div class="row">
-        <div class="col mt-3">
+        <div class="col-sm-4 mt-3">
           <p class="exp">Start typing username(s) to narrow down the list below</p>
           <input class="form-control" type="text" placeholder="Type Username" aria-label="default input example">
         </div>
-        <div class="col mt-3">
+        <div class="col-sm-4 mt-3">
           
           <form class="row g-4">
             <div class="col-auto">
@@ -164,7 +164,7 @@
           </form>
 
         </div>
-        <div class="col mt-3 text-right">
+        <div class="col-sm-4 mt-3 text-right">
           <button type="button" class="btn btn-primary mb-4">New User</button>
           <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group" role="group" aria-label="First group">
@@ -179,60 +179,62 @@
     </div>
 
     <div class="container">
-      <table class="table table-striped responsive">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Role</th>
-            <th scope="col">Communities</th>
-            <th scope="col">Active</th>
-            <th scope="col">Hide from Leaderboard</th>
-            <th scope="col">Remove Personal Data</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark Lanegen</td>
-            <td>Otto McFarlane</td>
-            <td>Elon Musk</td>
-            <td><div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            </div>
-          </td>
-            <td><div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-            </div></td>
-            <td>Emile Smith-Rowe</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td><div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-            </div></td>
-            <td><div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            </div></td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-            <td><div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-            </div></td>
-            <td><div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            </div></td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-striped responsive">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Role</th>
+              <th scope="col">Communities</th>
+              <th scope="col">Active</th>
+              <th scope="col">Hide from Leaderboard</th>
+              <th scope="col">Remove Personal Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark Lanegen</td>
+              <td>Otto McFarlane</td>
+              <td>Elon Musk</td>
+              <td><div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              </div>
+            </td>
+              <td><div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              </div></td>
+              <td>Emile Smith-Rowe</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td><div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              </div></td>
+              <td><div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              </div></td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+              <td><div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              </div></td>
+              <td><div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              </div></td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">
@@ -252,87 +254,124 @@
 
     <div class="container">
       <h4 class="pt-6">Selected 0 Users</h4>
+      <div class="row">
 
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Set role of selected users to
-        </label>
+        <div class="col-sm-6">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Set role of selected users to
+            </label>
+    
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">Admin</option>
+              <option value="2">User</option>
+              <option value="3">Community Leader</option>
+            </select>
+          </div>
+        </div>
 
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">Admin</option>
-          <option value="2">User</option>
-          <option value="3">Community Leader</option>
-        </select>
+        <div class="col-sm-6">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Add selected users to communities
+            </label>
+            <input class="form-control mb-3" type="text" placeholder="Type Username" aria-label="default input example">
+          </div>
+        </div>
 
+        <div class="col-sm-6">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Send welcome email to selected users
+            </label>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Toggle selected users on/off
+            </label>
+    
+            <select class="form-select" aria-label="Toggle selected users on/off">
+              <option selected>Yes</option>
+              <option value="1">No</option>
+            </select>
+    
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Hide selected users from leaderboard
+            </label>
+    
+            <select class="form-select" aria-label="Toggle selected users on/off">
+              <option selected>Yes</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Change Programme Level (from profile fields) 
+            </label>
+    
+            <select class="form-select mb-3" aria-label="Toggle selected users on/off">
+              <option selected>Select an Option</option>
+              <option value="1">Yes</option>
+              <option value="1">No</option>
+            </select>
+    
+          </div>
+
+        </div>
+
+        
+        
+        <div class="col-sm-6">
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Change Regions (from profile fields) 
+            </label>
+    
+            <select class="form-select mb-3" aria-label="Toggle selected users on/off">
+              <option selected>Select an Option</option>
+              <option value="1">Yes</option>
+              <option value="1">No</option>
+            </select>
+    
+          </div>
+
+        </div>
+
+
+        
       </div>
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked">
-          Add selected users to communities
-        </label>
-        <input class="form-control mb-3" type="text" placeholder="Type Username" aria-label="default input example">
 
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked">
-          Send welcome email to selected users
-        </label>
-      </div>
 
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Toggle selected users on/off
-        </label>
 
-        <select class="form-select" aria-label="Toggle selected users on/off">
-          <option selected>Yes</option>
-          <option value="1">No</option>
-        </select>
 
-      </div>
 
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Hide selected users from leaderboard
-        </label>
 
-        <select class="form-select" aria-label="Toggle selected users on/off">
-          <option selected>Yes</option>
-          <option value="1">No</option>
-        </select>
 
-      </div>
 
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Change Programme Level (from profile fields) 
-        </label>
 
-        <select class="form-select mb-3" aria-label="Toggle selected users on/off">
-          <option selected>Select an Option</option>
-          <option value="1">Yes</option>
-          <option value="1">No</option>
-        </select>
 
-      </div>
-
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Change Regions (from profile fields) 
-        </label>
-
-        <select class="form-select mb-3" aria-label="Toggle selected users on/off">
-          <option selected>Select an Option</option>
-          <option value="1">Yes</option>
-          <option value="1">No</option>
-        </select>
-
-      </div>
 
 
     </div>
