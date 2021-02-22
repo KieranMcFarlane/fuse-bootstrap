@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script></script>
+    <title>Fuse Bootstrap</title>
+    <style>
+
+      .exp {
+        max-width: 300px;
+      }
+
+      .page-header {
+        background: #0066FF;
+        border-radius: 12px;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+        padding-left: 3rem;
+        position: relative;
+        overflow: hidden;
+        color: white;
+      }
+
+      .breadcrumb-item a {
+        text-decoration: none;
+      }
+
+      .page-header img {
+        position: absolute;
+        bottom: -120px;
+        right: 60px;
+        width: 250px;
+        height: auto;
+      }
+
+      .btn-group {
+        margin-left: auto;
+      }
+
+      .table-striped tbody tr:nth-of-type(2n+1) {
+        background-color: #F6F6FF;
+      }
+
+      .select-container {
+        display: flex;
+      }
+
+      .select-container select {
+        height: 38px;
+      }
+
+      .select-container button {
+        margin-left: 16px;
+      }
+
+      .breadcrumb {
+        background-color: transparent;
+      }
+
+  .text {
+    position: relative;
+    top: 54px;
+  }
+
+  .navbar-brand img {
+    width: 65px;
+  }
+      
+
+    </style>
+</head>
+<body>
+    <div class="container-full">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/fuse-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+    <div class="container">
+        <div class="alert alert-info mt-3" role="alert">
+            A simple info alert—check it out!
+        </div>
+
+        <nav class="mt-2" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Admin</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Manage Users</li>
+            </ol>
+          </nav>
+          <div class="row justify-content-center">
+            <div class="page-header align-self-center col-10 mt-3 mb-3">
+              <div class="text">
+                <div class="display-4 pb-1">Manage Users</div>
+                <p class="lead">Give your users defined roles and customise their settings</p>
+              </div>
+              <img src="img/great-idea.png" alt="settings model">
+            </div>
+          </div>
+    </div>
+
+    <div class="container mb-4 mt-4">
+      <div class="row">
+        <div class="col mt-3">
+          <p class="exp">Start typing username(s) to narrow down the list below</p>
+          <input class="form-control" type="text" placeholder="Type Username" aria-label="default input example">
+        </div>
+        <div class="col mt-3">
+          
+          <form class="row g-4">
+            <div class="col-auto">
+              <p class="exp">Choose a community to narrow down the list below</p>
+
+              <div class="select-container">
+
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+  
+                <button type="submit" class="btn btn-primary mb-3">Reset</button>
+
+              </div>
+
+
+            </div>
+          </form>
+
+        </div>
+        <div class="col mt-3 text-right">
+          <button type="button" class="btn btn-primary mb-4">New User</button>
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-primary">50</button>
+              <button type="button" class="btn btn-primary">100</button>
+              <button type="button" class="btn btn-primary">500</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <table class="table table-striped responsive">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Communities</th>
+            <th scope="col">Active</th>
+            <th scope="col">Hide from Leaderboard</th>
+            <th scope="col">Remove Personal Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark Lanegen</td>
+            <td>Otto McFarlane</td>
+            <td>Elon Musk</td>
+            <td><div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
+          </td>
+            <td><div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            </div></td>
+            <td>Emile Smith-Rowe</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td><div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            </div></td>
+            <td><div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div></td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+            <td><div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            </div></td>
+            <td><div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div></td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="container">
+      <h4 class="pt-6">Selected 0 Users</h4>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Set role of selected users to
+        </label>
+
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">Admin</option>
+          <option value="2">User</option>
+          <option value="3">Community Leader</option>
+        </select>
+
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Add selected users to communities
+        </label>
+        <input class="form-control mb-3" type="text" placeholder="Type Username" aria-label="default input example">
+
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Send welcome email to selected users
+        </label>
+      </div>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Toggle selected users on/off
+        </label>
+
+        <select class="form-select" aria-label="Toggle selected users on/off">
+          <option selected>Yes</option>
+          <option value="1">No</option>
+        </select>
+
+      </div>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Hide selected users from leaderboard
+        </label>
+
+        <select class="form-select" aria-label="Toggle selected users on/off">
+          <option selected>Yes</option>
+          <option value="1">No</option>
+        </select>
+
+      </div>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Change Programme Level (from profile fields) 
+        </label>
+
+        <select class="form-select mb-3" aria-label="Toggle selected users on/off">
+          <option selected>Select an Option</option>
+          <option value="1">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+      </div>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Change Regions (from profile fields) 
+        </label>
+
+        <select class="form-select mb-3" aria-label="Toggle selected users on/off">
+          <option selected>Select an Option</option>
+          <option value="1">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+      </div>
+
+
+    </div>
+
+    <div class="container text-right mt-4 mb-4 ">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Export all users</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Export selected users</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Apply</button>
+    </div>
+
+</body>
+</html>
+
+
+
