@@ -37,8 +37,12 @@
         height: auto;
       }
 
-      .btn-group {
+      /* .btn-group {
         margin-left: auto;
+      } */
+
+      .btn-toolbar {
+        justify-content: flex-end;
       }
 
       .table-striped tbody tr:nth-of-type(2n+1) {
@@ -123,14 +127,13 @@
               <li class="breadcrumb-item active" aria-current="page">Manage Users</li>
             </ol>
           </nav>
-          <div class="row justify-content-center">
-            <div class="page-header align-self-center col-10 mt-3 mb-3">
+
+            <div class="page-header align-self-center col-12 mt-3 mb-3 justify-content-center">
               <div class="text">
                 <div class="display-4 pb-1">Manage Users</div>
                 <p class="lead">Give your users defined roles and customise their settings</p>
               </div>
               <img src="img/great-idea.png" alt="settings model">
-            </div>
           </div>
     </div>
 
@@ -140,9 +143,9 @@
           <p class="exp">Start typing username(s) to narrow down the list below</p>
           <input class="form-control" type="text" placeholder="Type Username" aria-label="default input example">
         </div>
-        <div class="col-sm-4 mt-3">
+        <div class="col-sm-5 mt-3">
           
-          <form class="row g-4">
+          <form class="row">
             <div class="col-auto">
               <p class="exp">Choose a community to narrow down the list below</p>
 
@@ -164,7 +167,7 @@
           </form>
 
         </div>
-        <div class="col-sm-4 mt-3 text-right">
+        <div class="col-sm-3 mt-3 text-right">
           <button type="button" class="btn btn-primary mb-4">New User</button>
           <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group" role="group" aria-label="First group">
