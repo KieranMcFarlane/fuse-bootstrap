@@ -8,16 +8,40 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script></script>
     <title>Fuse Bootstrap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
     <style>
+
+* {
+          font-family: 'Lato', sans-serif;
+      }
+
+      footer {
+        background: gray;
+        color: white;
+        font-weight: 30;
+        text-align: right;
+        padding: 2rem 0 1.8rem 0;
+        margin: 0;
+        color: #FF2C91;
+      }
 
       #topTickbox {
         position: relative;
       }
 
+      .display-title {
+        font-weight: 500;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-size: 34px !important;
+        margin-top: 30px;
+      }
+
       .settings {
         background-color: #F6F6FF;
         border-radius: 12px;
-        padding: 2rem 3rem;
+        padding: 2.5rem 2rem 2rem 2rem;
+        border: 1px solid #E5E5F0;
       }
 
       .form-check-input {
@@ -173,7 +197,7 @@
 
             <div class="page-header align-self-center col-12 mt-3 mb-3 justify-content-center">
               <div class="text">
-                <div class="display-4 pb-1">Manage Users</div>
+                <div class="display-title pb-1">Manage Users</div>
                 <p class="lead">Give your users defined roles and customise their settings</p>
               </div>
               <img src="img/great-idea.png" alt="settings model">
@@ -192,18 +216,18 @@
 
               <p class="exp">Choose a community to narrow down the list below</p>
 
-              <div class="select-container">
 
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-  
-                <button type="submit" class="btn btn-primary mb-3">Reset</button>
+                <div class="input-group">
+                  <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
 
-              </div>
+
 
           </form>
 
@@ -306,13 +330,13 @@
     </div>
 
     <div class="container settings">
-      <h4 class="pt-6">Selected 0 Users</h4>
+      <h5 class="mb-5">Selected 0 Users</h5>
       <div class="row">
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-4">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
+            <label class="form-check-label mb-3" for="flexCheckDefault">
               Set role of selected users to
             </label>
     
@@ -325,30 +349,30 @@
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-4">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Add selected users to communities
+            <label class="form-check-label mb-3" for="flexCheckChecked">
+              Add selected users to Communities
             </label>
-            <input class="form-control mb-3" type="text" placeholder="Type Username" aria-label="default input example">
+            <input class="form-control mb-3" type="text" placeholder="Add Users" aria-label="default input example">
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-4">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
+            <label class="form-check-label mb-3" for="flexCheckChecked">
               Send welcome email to selected users
             </label>
           </div>
         </div>
 
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-4">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
+            <label class="form-check-label mb-3" for="flexCheckDefault">
               Toggle selected users on/off
             </label>
     
@@ -360,10 +384,10 @@
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-4">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
+            <label class="form-check-label mb-3" for="flexCheckDefault">
               Hide selected users from leaderboard
             </label>
     
@@ -374,11 +398,11 @@
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-4">
 
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
+            <label class="form-check-label mb-3" for="flexCheckDefault">
               Change Programme Level (from profile fields) 
             </label>
     
@@ -394,11 +418,11 @@
 
         
         
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-4">
 
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
+            <label class="form-check-label mb-3" for="flexCheckDefault">
               Change Regions (from profile fields) 
             </label>
     
@@ -435,6 +459,7 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Apply</button>
     </div>
 
+    <footer><div class="container"><p><span>⚡</span>Powered by Fuse Universal</p></div></footer>
 </body>
 </html>
 

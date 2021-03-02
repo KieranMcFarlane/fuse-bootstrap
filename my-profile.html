@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+    <script></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>Fuse Bootstrap</title>
+    <style>
+
+      * {
+          font-family: 'Lato', sans-serif;
+      }
+
+      footer {
+        background: gray;
+        color: white;
+        font-weight: 30;
+        text-align: right;
+        padding: 2rem 0 1.8rem 0;
+        margin: 0;
+        color: #FF2C91;
+      }
+
+      a.page-link, .breadcrumb-item a {
+        color: #FF2C91
+      }
+
+      .card p.date {
+        color: #FF2C91;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+
+      .detail-text {
+        padding: 24px 12px 12px 14px;
+      }
+
+      .detail-text .card-title {
+        font-size: 18px !important;
+        font-weight: 400;
+      }
+
+      .detail-text .card-text {
+        color: #A5A5A5;
+        font-weight: 300;
+        margin-bottom: 24px;
+        padding-right: 16px;
+      }
+
+      .pills-footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 12px 16px 12px;
+      }
+
+      .pill {
+        padding: 4px 8px;
+        border: 1px solid #cac9c9;
+        margin: 0 4px;
+        margin-bottom: 0;
+        color: slategrey;
+        border-radius: 16px;
+        font-size: 12px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 8px;
+      }
+
+      .detail-text .card-text {
+        margin-bottom: 16px;
+      }
+
+      .pagination {
+        margin-top: 36px;
+        margin-bottom: 64px;
+      }
+
+      .page-container {
+        position: relative;
+      }
+
+      .page-container .btn {
+        position: absolute;
+        top: 24px;
+        right: 36px;
+        z-index: 99;
+        border: 1px solid #e8367d;
+        color: #464646;
+        font-weight: 200;
+        background: #fff;
+      }
+
+      p.company {
+        margin-top: -10px;
+      }
+
+      .text p.email {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: -4px;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 260px;
+      background-image: url(img/flitter.png);
+      background-size: cover;
+    }
+
+      .profile-text {
+        margin-top: -100px;
+        text-align: center;
+      }
+
+      .text p.name {
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      .text p.company {
+        font-size: 24px;
+        font-weight: 300;
+      }
+
+      .text p.email {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .page-header .btn {
+        position: absolute;
+        right: 32px;
+        top: 28px;
+        color: white;
+        border: 1px solid white;
+      }
+
+      .page-header .btn {
+        position: absolute;
+        right: calc(50% - 67px);
+        top: 28px;
+        color: white;
+        border: 1px solid white;
+      }
+
+      .page-header img {
+        margin: auto;
+      }
+
+      .page-header {
+        text-align: center;
+      }
+
+      .lead {
+        font-weight: 200;
+      }
+
+      #topTickbox {
+        position: relative;
+      }
+
+      .settings {
+        background-color: #F6F6FF;
+        border-radius: 12px;
+        padding: 2.5rem 2rem 2rem 2rem;
+        border: 1px solid #E5E5F0;
+      }
+
+      .form-check-input {
+        margin-left: 0;
+      }
+
+      .exp {
+        max-width: 300px;
+      }
+
+      .page-header {
+        background-image: url(img/profile-top.png);
+        background-size: cover;
+        border-radius: 12px 12px 4px 4px;
+        height: 220px;
+        /* padding-bottom: 5rem;
+        padding-top: 5rem; */
+        /* padding-left: 3rem; */
+        position: relative;
+        overflow: hidden;
+        color: white;
+      }
+
+      .breadcrumb-item a {
+        text-decoration: none;
+      }
+
+      .page-header + img {
+        width: 183px;
+        height: auto;
+        position: relative;
+        top: -120px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      /* .btn-group {
+        margin-left: auto;
+      } */
+
+      .btn-toolbar {
+        justify-content: flex-end;
+      }
+
+      .table-striped tbody tr:nth-of-type(2n+1) {
+        background-color: #F6F6FF;
+      }
+
+      .select-container {
+        display: flex;
+      }
+
+      .select-container select {
+        height: 38px;
+      }
+
+      .select-container button {
+        margin-left: 16px;
+      }
+
+      .breadcrumb {
+        background-color: transparent;
+      }
+
+      footer {
+        background: rgba(0,0,0,.125);
+        color: #d031b0;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      .dot {
+        height: 25px;
+        width: 25px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 8px;
+        background-position: center;
+        background-size: contain;
+      }
+
+      .dot.one{
+        background-image: url("img/5g7tSrQSJEo.png");
+      }
+
+      .dot.two{
+        background-image: url("img/gRX1ZMnacBI.png");
+      }
+
+      .dot.three{
+        background-image: url("img/rNhM2Vt8-A8.png");
+      }
+
+      .nav-pills {
+        display: flex;
+        padding-top: 8px;
+        margin-bottom: 12px;
+        overflow-x: scroll;
+        position: relative;  
+        padding: 2rem 0;
+      }
+
+      /* .nav-pills:before {
+        content: "";
+        background-color: purple;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 100%;  
+      }
+
+      .nav-pills:after {
+        content: "";
+        background-color: purple;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 100%;  
+      } */
+
+      .nav-pills .pill {
+        padding: 8px 18px;
+        border: 1px solid #cac9c9;
+        margin: 0 4px;
+        margin-bottom: 0px;
+        margin-bottom: 0;
+        color: slategrey;
+        border-radius: 16px;
+        font-size: 14px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 8px;
+        font-weight: 300;
+      }
+
+      .pill-container {
+        display: inline-flex;
+      }
+
+      .dropdown-toggle img {
+        width: 16px;
+        margin-right: 4px;
+      }
+
+      .dropdown-toggle {
+        background: transparent;
+        color: gray;
+        font-weight: 300;
+        border: 1px solid gray;
+        padding: 0 18px;
+        height: 39px;
+        border: 1px solid #cac9c9;
+        margin: 0 4px;
+        color: slategrey;
+        border-radius: 16px;
+        font-size: 14px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 8px;
+        font-weight: 300;
+      }
+
+      .pagination {
+
+      }
+
+
+  /* .text {
+    position: relative;
+    top: 54px;
+  } */
+
+  .navbar-brand img {
+    width: 65px;
+  }
+
+  .btn-toolbar {
+    justify-content: flex-end;
+  }
+
+  .btn-group .dropdown-toggle::after {
+    display: none;
+  }
+
+  .filter-btn {
+    text-align: right;
+    margin-top: 51px;
+  }
+
+  #button-addon2 {
+    border: 1px solid #cac9c9;
+    color: slategrey;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+
+  @include media-breakpoint-up(md) { .btn-toolbar { justify-content: flex-start; } }  
+      
+
+    </style>
+</head>
+<body>
+    <div class="container-full">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/fuse-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+    <div class="container">
+        <nav class="mt-4 mb-4" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Admin</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Profile</li>
+            </ol>
+          </nav>
+    </div>
+    <div class="container page-container">
+      <div class="btn">Manage Profile</div>
+      <div class="page-header align-self-center col-12 mt-3 mb-3 justify-content-center"></div>
+      <img src="img/profile-photo.png" alt="">
+        <div class="text profile-text">
+          <p class="name">Kieran McFarlane</p>
+          <p class="company">Moncler</p>
+          <p class="email">kieranmcfarlane2@googlemail.com</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="nav-pills"><p class="pill">Content</p><p class="pill">Activity</p><p class="pill">Events</p><p class="pill">Courses</p><p class="pill">Certificates</p><p class="pill">Export</p><p class="pill">My Goals</p><p class="pill">Communities</p><p class="pill">···</p></div>
+          </div>
+
+          <div class="col-sm-6 text-right">
+
+            <div class="filter-container">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+              </div>
+            </div>
+
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/filter.svg"> Filter & Sort
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Search</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    <div class="container mb-4 mt-4">
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <img class="card-img-top">
+            <div class="detail-text">
+              <p class="date">Jan 12th 2021</p>
+              <p class="card-title">Zen Buddhism</p>
+              <p class="card-text">During these years, Zen organized itself into five ‘houses’, or five schools. Two of...</p>
+            </div>
+            <div class="pills-footer">
+              <p class="pill">4 Views</p>
+              <p class="pill">0 Likes</p>
+              <p class="pill">0 Shares</p>
+              <p class="pill">0 Comments</p>
+              <p class="pill">0 Points</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="img/doomer.png">
+          <div class="detail-text">
+            <p class="date">Jul 18th 2021</p>
+            <p class="card-title">1 Hour of Jazzy Doomer Music</p>
+            <p class="card-text">0:00 Chet Baker, But Not For Me 3:04 - Ron Carter, The Shadow Of Your Smile....</p>
+          </div>
+          <div class="pills-footer">
+            <p class="pill">4 Views</p>
+            <p class="pill">0 Likes</p>
+            <p class="pill">0 Shares</p>
+            <p class="pill">0 Comments</p>
+            <p class="pill">0 Points</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="img/flitter.png">
+            <div class="detail-text">
+              <p class="date">Aug 5th 2021</p>
+              <p class="card-title">1 Hour of Jazzy Doomer Music</p>
+              <p class="card-text">0:00 Chet Baker, But Not For Me 3:04 - Ron Carter, The Shadow Of Your Smile....</p>
+            </div>
+            <div class="pills-footer">
+              <p class="pill">4 Views</p>
+              <p class="pill">0 Likes</p>
+              <p class="pill">0 Shares</p>
+              <p class="pill">0 Comments</p>
+              <p class="pill">0 Points</p>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/flitter.png">
+              <div class="detail-text">
+                <p class="date">Aug 5th 2021</p>
+                <p class="card-title">1 Hour of Jazzy Doomer Music</p>
+                <p class="card-text">0:00 Chet Baker, But Not For Me 3:04 - Ron Carter, The Shadow Of Your Smile....</p>
+              </div>
+              <div class="pills-footer">
+                <p class="pill">4 Views</p>
+                <p class="pill">0 Likes</p>
+                <p class="pill">0 Shares</p>
+                <p class="pill">0 Comments</p>
+                <p class="pill">0 Points</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img class="card-img-top" src="img/flitter.png">
+                <div class="detail-text">
+                  <p class="date">Aug 5th 2021</p>
+                  <p class="card-title">1 Hour of Jazzy Doomer Music</p>
+                  <p class="card-text">0:00 Chet Baker, But Not For Me 3:04 - Ron Carter, The Shadow Of Your Smile....</p>
+                </div>
+                <div class="pills-footer">
+                  <p class="pill">4 Views</p>
+                  <p class="pill">0 Likes</p>
+                  <p class="pill">0 Shares</p>
+                  <p class="pill">0 Comments</p>
+                  <p class="pill">0 Points</p>
+                </div>
+              </div>
+              </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                <img class="card-img-top" src="img/flitter.png">
+                <div class="detail-text">
+                  <p class="date">Aug 5th 2021</p>
+                  <p class="card-title">1 Hour of Jazzy Doomer Music</p>
+                  <p class="card-text">0:00 Chet Baker, But Not For Me 3:04 - Ron Carter, The Shadow Of Your Smile....</p>
+                </div>
+                <div class="pills-footer">
+                  <p class="pill">4 Views</p>
+                  <p class="pill">0 Likes</p>
+                  <p class="pill">0 Shares</p>
+                  <p class="pill">0 Comments</p>
+                  <p class="pill">0 Points</p>
+                </div>
+              </div>
+              </div>
+
+
+
+
+      </div>
+     
+
+      
+   
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    <footer><div class="container"><p><span>⚡</span>Powered by Fuse Universal</p></div></footer>
+</body>
+</html>
+
+
+
