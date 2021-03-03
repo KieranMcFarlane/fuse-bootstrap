@@ -20,6 +20,16 @@
           font-family: 'Lato', sans-serif;
       }
 
+      .filter-selection {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+      }
+
+      .filter-container {
+        max-width: 230px;
+      }
+
       footer {
         background: gray;
         color: white;
@@ -28,6 +38,9 @@
         padding: 2rem 0 1.8rem 0;
         margin: 0;
         color: #FF2C91;
+      }
+      footer .container p {
+        color: #F0519D !important;
       }
 
       a.page-link, .breadcrumb-item a {
@@ -373,7 +386,7 @@
     color: slategrey;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   footer .container p {
@@ -456,7 +469,7 @@
             <div class="nav-pills"><p class="pill">Content</p><p class="pill">Activity</p><p class="pill">Events</p><p class="pill">Courses</p><p class="pill">Certificates</p><p class="pill">Export</p><p class="pill">My Goals</p><p class="pill">Communities</p><p class="pill">···</p></div>
           </div>
 
-          <div class="col-sm-6 text-right">
+          <div class="col-sm-4 offset-md-2 text-right filter-selection">
 
             <div class="filter-container">
               <div class="input-group mb-3">
