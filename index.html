@@ -11,22 +11,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
     <style>
 
-* {
+      * {
           font-family: 'Lato', sans-serif;
           font-weight: 300;
       }
 
-      .breadcrumb-item a {
-        color: #FF2C91;
+      tr th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px;
       }
 
       footer {
-        background: gray;
-        color: white;
-        font-weight: 30;
+        font-weight: 300;
         text-align: right;
         padding: 2rem 0 1.8rem 0;
         margin: 0;
+        color: #FF2C91;
+      }
+      footer .container p {
+        font-size: 11px;
+        color: #F0519D !important;
+      }
+
+
+      footer {
+        background: rgba(0,0,0,.125);
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 1.5rem 0 0.4rem 0;
+      }
+
+      footer .container p {
+        color: #FF2C91 !important;
+      }
+
+      footer .container span {
+        padding-right: 4px;
+      }
+
+      .form-control {
+        font-weight: 400;
+      }
+
+      .breadcrumb-item a {
         color: #FF2C91;
       }
 
@@ -144,7 +174,9 @@
     justify-content: flex-end;
   }
 
-  @include media-breakpoint-up(md) { .btn-toolbar { justify-content: flex-start; } }  
+  @media screen and (max-width: 900px) {
+    .page-header img { display: none; }
+  }  
       
 
     </style>

@@ -433,12 +433,37 @@
 
       }
 
+      .search-icon {
+        width: 16px;
+        position: absolute;
+        z-index: 9;
+        top: 22px;
+        left: -14px;
+      }
 
-      .text p.email {
-    font-size: 18px;
-    font-weight: 300;
-    color: #666;
-}
+      .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .dropdown-toggle:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+
+
+    .text p.email {
+      font-size: 18px;
+      font-weight: 300;
+      color: #666;
+    }
+
+    .form-select:focus {
+      outline: 0;
+      box-shadow: none;
+    }
 
   /* .text {
     position: relative;
@@ -591,6 +616,7 @@ height: 70px;
 
             <div class="filter-container">
               <div class="input-group mb-3">
+                <img class="search-icon" src="img/search.svg" alt="">
                 <input type="text" class="form-control search-box" placeholder="Search" aria-label="" aria-describedby="button-addon2">
                 <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button> -->
               </div>
@@ -606,7 +632,7 @@ height: 70px;
                 <li><a class="dropdown-item" href="#">Sort Ascending</a></li>
                 <li><a class="dropdown-item" href="#">Sort Descending</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">From - To</a></li>
+                <li><a class="dropdown-item" href="#">From - To Dates</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Views</a></li>
                 <li><a class="dropdown-item" href="#">Likes</a></li>
